@@ -1,0 +1,9 @@
+{% if klang_list %}
+	<ul>
+	{% for klang in klang_list %}
+		<li>{{klang.displayname}}</li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>Keine Klangs vorhanden</p>
+{% endif %}
