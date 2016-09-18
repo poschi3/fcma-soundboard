@@ -1,0 +1,195 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    -moz-font-feature-settings: inherit;
+    -moz-font-language-override: inherit;
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+html {
+    line-height: 1;
+}
+ol, ul {
+    list-style: outside none none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+    vertical-align: middle;
+}
+q, blockquote {
+    quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: none;
+}
+a img {
+    border: medium none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+body {
+    background-image: url("../images/bg_new.png"), url("../images/rage.svg");
+    color: black;
+    font: 14px/21px "typerwriter",Arial,sans-serif;
+}
+.behaeltnis {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 1280px;
+}
+.behaeltnis:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+.behaeltnis {
+    width: 960px;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.behaeltnis {
+    width: 768px;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.behaeltnis {
+    width: 420px;
+}
+}
+
+@media only screen and (max-width: 479px) {
+.behaeltnis {
+    width: 300px;
+}
+}
+
+.klang, #kopfgrafik {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+}
+@media only screen and (max-width: 767px) {
+.klang, #kopfgrafik {
+    margin: 0;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.klang, #kopfgrafik {
+    width: 360px;
+}
+}
+@media only screen and (max-width: 767px) {
+.klang, #kopfgrafik {
+    width: 300px;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.klang, #kopfgrafik {
+    width: 420px;
+}
+}
+.klang {
+    margin-bottom: 20px;
+    text-align: center;
+}
+#ueberschrift {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 620px;
+}
+@media only screen and (max-width: 767px) {
+#ueberschrift {
+    margin: 0;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+#ueberschrift {
+    width: 492px;
+}
+}
+@media only screen and (max-width: 767px) {
+#ueberschrift {
+    width: 300px;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+#ueberschrift {
+    width: 420px;
+}
+}
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 14px;
+    padding: 0 10px;
+}
+
+h1 a {
+    color: white;
+}
+h1 a:hover {
+    color: white;
+}
+h2 {
+    font-size: 17px;
+    line-height: 30px;
+}
+.taster {
+    background: none repeat scroll 0 0 #99002f;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    min-height: 40px;
+    padding-top: 10px;
+}
+.taster:hover {
+    background: none repeat scroll 0 0 #ffffff;
+    color: #99002f;
+}
+@font-face {
+    font-family: "typerwriter";
+    src: url("../font/TravelingTypewriter.ttf") format("truetype");
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    width: 80%;
+}
