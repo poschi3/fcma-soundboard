@@ -1,9 +1,37 @@
-{% if klang_list %}
-	<ul>
-	{% for klang in klang_list %}
-		<li>{{klang.displayname}}</li>
-	{% endfor %}
-	</ul>
-{% else %}
-	<p>Keine Klangs vorhanden</p>
-{% endif %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>feature complete my ass</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+	<meta name="theme-color" content="#99002f">
+	<link rel="icon" sizes="192×192" href="fcmaicon.png">
+	<link rel="icon" type="image/ico" href="http://fcma.snengl.de/favicon.ico">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<script src="{% static 'css/style.css' %}" type="text/javascript"></script>
+	<script src="{% static 'js/replace.js' %}" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="behaeltnis">
+		<div id="kopfgrafik">
+			<a href="#"><img alt="fcma logo"
+				src="{% static 'images/fcma.png' %}"></a>
+		</div>
+		
+		<br class="clear"/>
+		{% if klang_list %} {% for klang in klang_list %}
+		<div class="klang">
+			<h2 class=" taster">{{klang.displayname}}</h2>
+			<audio style="display: none;" controls="controls" preload="none">
+			<source src="/media/{{klang.file}}">
+			</audio>
+		</div>
+		{% endfor %} {% else %}
+		<p>Keine Klangs vorhanden</p>
+		{% endif %}
+
+	</div>
+
+</body>
+</html>
