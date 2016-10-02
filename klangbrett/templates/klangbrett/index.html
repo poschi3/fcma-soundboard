@@ -20,7 +20,7 @@
 		</div>
 		
 		<br class="clear"/>
-		{% if klang_list %} {% for klang in klang_list %}
+		{% if klang_list %} {% for klang in klang_list|dictsort:"displayname" %}
 		<div class="klang">
 			<h2 class=" taster">{{klang.displayname}}</h2>
 			<audio style="display: none;" controls="controls" preload="none">
